@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jo_ap2background"
+    android:backgroundTint="#B89888"
+    android:backgroundTintMode="multiply">
+
+    <EditText
+        android:id="@+id/jo_ptusername2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="5sp"
+        android:text="your username"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jo_tvtext" />
+
+    <EditText
+        android:id="@+id/jo_ptemail2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="5sp"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jo_ptusername2"
+        app:layout_constraintStart_toStartOf="@+id/jo_ptusername2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_ptusername2" />
+
+    <EditText
+        android:id="@+id/jo_ptpassword2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="5sp"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jo_ptemail2"
+        app:layout_constraintStart_toStartOf="@+id/jo_ptemail2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_ptemail2" />
+
+    <EditText
+        android:id="@+id/jo_ptconfpass2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="5sp"
+        android:text="Confirm Password"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jo_ptpassword2"
+        app:layout_constraintStart_toStartOf="@+id/jo_ptpassword2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_ptpassword2" />
+
+    <Button
+        android:id="@+id/jo_bsignup2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Sing Up"
+        android:textAllCaps="false"
+        android:textColor="#1C7985"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:icon="@android:drawable/ic_menu_set_as"
+        app:iconTint="#1A6CA5"
+        app:iconTintMode="src_atop"
+        app:layout_constraintEnd_toEndOf="@+id/jo_ptconfpass2"
+        app:layout_constraintStart_toStartOf="@+id/jo_ptconfpass2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_ptconfpass2" />
+
+    <Button
+        android:id="@+id/jo_bor"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="OR"
+        android:textColor="#1C7985"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/jo_bsignup2"
+        app:layout_constraintStart_toStartOf="@+id/jo_bsignup2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_bsignup2" />
+
+    <Button
+        android:id="@+id/jo_blogin2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#1C7985"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="25sp"
+        app:icon="@android:drawable/ic_menu_slideshow"
+        app:iconTint="#2777AC"
+        app:layout_constraintEnd_toEndOf="@+id/jo_bsignup2"
+        app:layout_constraintStart_toStartOf="@+id/jo_bsignup2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_bor" />
+
+    <ImageView
+        android:id="@+id/jo_ivlogo2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jo_ap2ap3logo" />
+
+    <TextView
+        android:id="@+id/jo_tvtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SignUp to Yddet"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jo_ivlogo2"
+        app:layout_constraintStart_toStartOf="@+id/jo_ivlogo2"
+        app:layout_constraintTop_toBottomOf="@+id/jo_ivlogo2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Take control of your health with your personal health data tracker, with Yddet your health is in your hands"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jo_blogin2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
